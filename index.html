@@ -1,9 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+ <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-firestore.js"></script>
 </head>
+
   <body>
     <h1> Monk's Cafe </h1>
     <h2> "Coffee Shop" </h2>
+
+      <form>
+      <h3> Reservations </h3>
+
+      <section>
+        <h5> Name </h5>
+        <input type="text" placeholder="Name">
+      </section>
+
+      <section>
+         <h5> Party Size </h5>
+         <div class="drop">
+            <select class="browser-default">
+              <option value="" disabled selected> 2 people</option>
+              <option value="2"> 2 People</option>
+              <option value="3">3 People</option>
+              <option value="4"> 4 People</option>
+              <option value="5"> 5 People</option>
+              <option value="6"> 6 People</option>
+              <option value="7"> 7 People</option>
+              <option value="8"> 8 People</option>
+            </select>
+          </div>
+      </section>
+
+       <section>
+        <h5> Select a Date </h5>
+        <div class="drop">
+          <select class="browser-default">
+            <option value="" disabled selected> Tuesday, September 25</option>
+            <option value="2"> Wednesday, September 26 </option>
+            <option value="3"> Thursday, September 27 </option>
+            <option value="4"> Friday, September 28</option>
+            <option value="5"> Saturday, September 29</option>
+            <option value="6"> Sunday, September 30</option>
+            <option value="7"> Monday, October 1</option>
+            <option value="8"> Tuesday, October 2</option>
+          </select>
+         </div>
+       </section>
+
+       <section>
+        <h5> Time </h5>
+        <div class="drop">
+          <select class="browser-default">
+            <option value="" disabled selected> - </option>
+            <option value="2"> 3:00pm</option>
+            <option value="3"> 4:00pm </option>
+            <option value="4"> 5:00pm</option>
+            <option value="5"> 6:00pm</option>
+            <option value="6"> 7:00pm</option>
+            <option value="7"> 8:00pm</option>
+            <option value="8"> 9:00pm</option>
+          </select>
+         </div>
+       </section>
+      </form>
+
+      <div class="time-select">
+        <div class="time"> 4:00pm</div>
+        <div class="time"> 5:00pm </div>
+        <div class="time"> 8:00pm</div>
+      </div>
   </body>
 </html>

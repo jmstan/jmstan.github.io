@@ -1,5 +1,127 @@
 @import "neat/neat";
+@import "bourbon/bourbon";
+// @import "base/base";
 
-h1 {
+body {
+  // @include grid-visual;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3 {
   text-align: center;
 }
+
+
+
+// img {
+//   @include grid-container;
+// }
+
+// form, .reservations {
+//   @include grid-column(10);
+//   @include grid-shift(1);
+// }
+
+input {
+  outline: 0;
+  // color: rgba(0,0,0, 0.26);
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0, 0.12);
+  background-color: none;
+  padding: 4px 0;
+  font-size: 14px;
+  width:100%;
+}
+
+
+input, select, textarea{
+    color: #000;
+}
+
+input > a {
+  color: rgba(0,0,0, 0.26);
+}
+
+section {
+  @include grid-column(3);
+}
+
+// table{
+//   @include grid-container;
+// }
+
+form {
+  @include grid-column(10);
+  @include grid-push(1);
+}
+
+select  {
+  font-family: inherit;
+  background-color: transparent;
+  width: 100%;
+  padding: 4px 0;
+  font-size: 16px;
+  color: black;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0, 0.12);
+  // @include grid-column(3);
+}
+
+
+/* Remove focus */
+select:focus {
+  outline: none;
+}
+
+/* Hide label */
+.drop label {
+  display: none;
+}
+
+/* Use custom arrow */
+ select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.drop {
+  position: relative;
+  // @include grid-column(3);
+}
+.drop:after {
+  position: absolute;
+  top: 0.75em;
+  right: 0.5em;
+  /* Styling the down arrow */
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: .25em solid transparent;
+  border-right: .25em solid transparent;
+  border-top: 0.375em solid rgba(0,0,0, 0.12);
+  pointer-events: none;
+}
+
+.time-select {
+  @include grid-column(10);
+  @include grid-push(2);
+  margin-top: 50px;
+}
+
+.time {
+  // width: 100px;
+  background-color: gray;
+  @include grid-column(3);
+  height: 40px;
+  line-height: 2.4;
+  text-align: center;
+}
+
+
+

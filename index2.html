@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+</head>
+
+  <body>
+    <h1> Monk's Cafe </h1>
+    <h2> "Coffee Shop" </h2>
+    <img src = "toms-restaurant.jpg">
+
+      <form>
+      <h3> Reservations </h3>
+        <section>
+          <h5> Name </h5>
+          <input type="text" placeholder="Placeholder Text">
+        </section>
+
+        <h5> Party Size </h5>
+        <section class="drop">
+          <select>
+            <option value="2"> 2 People</option>
+            <option value="3"> 3 People</option>
+            <option value="4"> 4 People</option>
+            <option value="5"> 5 People</option>
+            <option value="6"> 6 People</option>
+            <option value="7"> 7 People</option>
+            <option value="8"> 8 People</option>
+          </select>
+        </section>
+
+        <section>
+         <h5> Select a Date </h5>
+         <p>Date: <input type="text" id="datepicker"></p>
+        </section>
+
+        <section class= "drop">
+          <h5> Time </h5>
+          <select>
+            <option value=""> 7:00pm</option>
+          </select>
+        </section>
+      </form>
+
+      <div class = "reservations">
+       <h3> Existing Reservations </h3>
+      </div>
+
+    <script>
+      $( function() {
+         $( "#datepicker" ).datepicker();
+       } );
+     </script>
+  </body>
+</html>
